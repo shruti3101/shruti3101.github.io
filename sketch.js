@@ -3,13 +3,34 @@ function setup() {
 }
 
 function draw() {
-  background(255,24,0);
-  rect(20,20,60,60);
-  ellipse(56,46,55,55);
-  textSize(32);
-  fill(0,102,153);
-  text('Shruti says hi',10,60);
+  background(0);
+
+  var x=10;
+  var y=120;
+
+  var h=hour();
+  var m=minute();
+  var s=second();
+  fill(255);
+  text('The time right now is:\n' + h + ':'+ m +':'+ s,5, 50);
+
+  fill(244,64,107)
+  rect(x, y, s*1.5 ,20)
+
+  hhand= map(h,0,60,0,2*PI);
+  mhand= map(m,0,60,0,2*PI);
+  shand= map(s,0,60,0,2*PI);
+  //
+  ellipse(width/2,width/2,100,100);
+  fill(51,165,104)
+  arc(width/2,width/2,90,90,PI/2,hhand, PIE);
+  fill(118,51,165)
+  arc(width/2,width/2,70,70,PI/2,mhand, PIE);
+  fill(239,239,98)
+  arc(width/2,width/2,50,50,PI/2,shand, PIE);
 }
+
+
 
 // function draw() {
 //   if (mouseIsPressed) {
