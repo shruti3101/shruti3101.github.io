@@ -14,6 +14,8 @@ function draw(){
   var angle=map(s,0,60,0,2*PI)
 
   translate(width/2,height/2)
+  fill(0)
+  ellipse(0,0,10,10)
   rotate(angle)
   stroke(10)
   line(0,0,50,0)
