@@ -22,6 +22,11 @@ function draw(){
   ellipse(0,0,10,10)
 
   push();
+  fill(244,66,149)
+  ellipse(0,0,120,120)
+  pop();
+
+  push();
   rotate(angle1-(PI/2))
   strokeWeight(0.5)
   line(0,0,100,0)
