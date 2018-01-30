@@ -17,17 +17,19 @@ function draw() {
   fill(244,64,107)
   rect(x, y, s*1.5 ,20)
 
+  if (h>=12){h=h-12}
+
   hhand= map(h,0,12,0,2*PI);
   mhand= map(m,0,60,0,2*PI);
   shand= map(s,0,60,0,2*PI);
   //
   ellipse(width/2,width/2,100,100);
   fill(51,165,104)
-  arc(width/2,width/2,90,90,PI/2,hhand, PIE);
+  arc(width/2,width/2,90,90,hhand-(PI/2),-PI/2,PIE);
   fill(118,51,165)
-  arc(width/2,width/2,70,70,PI/2,mhand, PIE);
+  arc(width/2,width/2,70,70,mhand-(PI/2),-PI/2,PIE);
   fill(239,239,98)
-  arc(width/2,width/2,50,50,PI/2,shand, PIE);
+  arc(width/2,width/2,50,50,shand-(PI/2),-PI/2, PIE);
 }
 
 
