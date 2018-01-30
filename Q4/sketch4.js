@@ -15,16 +15,20 @@ function draw(){
 
   var angle1=map(s,0,60,0,2*PI)
   var angle2=map(m,0,60,0,2*PI)
-  var angle3=map(h/2,0,12,0,2*PI)
+
+  if (h>=12){h=h-12}
+  var angle3=map(h,0,12,0,2*PI)
 
   translate(width/2,height/2)
-  fill(0)
-  ellipse(0,0,10,10)
 
   push();
+  noStroke()
   fill(244,66,149)
-  ellipse(0,0,120,120)
+  ellipse(0,0,220,220)
   pop();
+
+  fill(0)
+  ellipse(0,0,10,10)
 
   push();
   rotate(angle1-(PI/2))
