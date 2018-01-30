@@ -11,24 +11,33 @@ function draw(){
   var m=minute();
   var s=second();
 
+  text('The time right now is:\n' + h + ':'+ m +':'+ s,5, 50);
+
   var angle1=map(s,0,60,0,2*PI)
   var angle2=map(m,0,60,0,2*PI)
-  var angle3=map(h,0,60,0,2*PI)
+  var angle3=map(h/2,0,12,0,2*PI)
 
   translate(width/2,height/2)
   fill(0)
   ellipse(0,0,10,10)
-  rotate(angle1)
-  stroke(10)
+
+  push();
+  rotate(angle1-(PI/2))
+  strokeWeight(0.5)
+  line(0,0,100,0)
+  pop();
+
+  push();
+  rotate(angle2-(PI/2))
+  strokeWeight(1)
+  line(0,0,80,0)
+  pop();
+
+  push();
+  rotate(angle3-(PI/2))
+  strokeWeight(2)
   line(0,0,50,0)
-
-  rotate(angle2)
-  stroke(25)
-  line(0,0,35,0)
-
-  rotate(angle3)
-  stroke(40)
-  line(0,0,20,0)
+  pop();
 
 
 }
