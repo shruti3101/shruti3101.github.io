@@ -1,18 +1,18 @@
 
 var headlines = [];
-var hitwords = [
-  "and",
-  "or",
-  "the",
-  "on",
-  "a",
-  "an",
-  "in",
-  "into",
-  "of",
-  "for",
-  "from"
-];
+// var hitwords = [
+//   "and",
+//   "or",
+//   "the",
+//   "on",
+//   "a",
+//   "an",
+//   "in",
+//   "into",
+//   "of",
+//   "for",
+//   "from"
+// ];
 
 function preload() {
 
