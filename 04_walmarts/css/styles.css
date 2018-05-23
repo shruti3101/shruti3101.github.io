@@ -1,0 +1,111 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 20;
+}
+a {
+    padding: 1px;
+    color: black;
+    /* border: 1px solid gray; */
+
+}
+a:hover {
+  background-color: lightgray;
+  color: #B32C50;
+
+}
+h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2,h3,h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+  color: #B32C50;
+}
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+h4 {
+  font-size: 15px;
+  margin-top: 0;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: auto;
+  padding: 25px;
+  /* padding-bottom: 40; */
+  overflow: hidden;
+}
+
+.column-narrow {
+  width: 35%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+}
+.column-wide {
+  width: 62%;
+  float: left;
+  min-height: 175px;
+}
+
+.center {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:3%;
+    /* width: 50%; */
+}
+
+
+/* Header & Footer
+------------------------------------*/
+header,
+footer {
+  background: #ECF0F1;
+  /* color: #0F3057; */
+}
+header h1,
+header h2 {
+    /* color: #0F3057; */
+    margin: 0;
+}
+
+
+/* Footer styles only */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 5px;
+  display: inline-block;
+}
+
+
+.work1 {
+    background: white;
+    padding-bottom: 50px;
+    /* background: #ECF0F1; */
+}
